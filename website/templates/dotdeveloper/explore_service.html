@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main_content %}
+<main>
+    <section id="services" class="services-section">
+        <h2 class="section-title">Our Services</h2>
+        <ul class="services-list">
+            {% for explore in explores %}
+            <li class="service-item">
+                <div class="service-info">
+                    <h3 class="service-name">{{ explore.name }}</h3>
+                    <p class="service-description">{{ explore.description }}</p>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+</main>
+
+
+{% endblock %}

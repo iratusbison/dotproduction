@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block main_content %}
+
+<main>
+    <section id="services" class="services-section">
+        <h2 class="section-title">Our Products</h2>
+        <ul class="services-list">
+            {% for product in products %}
+            <li class="service-item">
+                <div class="service-info">
+                    <h3 class="service-name">{{ product.name }}</h3>
+                    <p class="service-price">Price: ₹{{ product.price }}</p>
+                    <p class="service-category">Category: {{ product.catergory }}</p>
+                    <h3 class="service-description-title">Description:</h3>
+                    <p class="service-description">{{ product.description }}</p>
+                    <a href="{{ product.url }}" class="service-link" target="_blank">View Product</a>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+</main>
+
+
+{% endblock %}

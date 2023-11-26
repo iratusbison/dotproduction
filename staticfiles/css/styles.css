@@ -1,0 +1,232 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333; /* Dark text color */
+}
+
+header {
+    background-color: navy; /* Navy blue header */
+    color: #fff; /* White text color */
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f2f2f2;
+}
+
+/* Services section styles */
+.services-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+}
+
+.services-list li {
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: navy; /* Navy blue footer */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
+.logo {
+    max-width: 300px; /* Set the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure proper spacing */
+    margin: 0 auto; /* Center the logo horizontally */
+    transition: transform 0.3s ease; 
+}
+.logo:hover {
+    transform: scale(1.1); /* Example: Enlarge logo on hover */
+}
+
+
+
+
+.about-image {
+    max-width: 50%; /* Ensure the image doesn't exceed its container */
+    height: 30%; /* Maintain aspect ratio */
+    /* Additional styles for margin, padding, etc. */
+}
+
+
+.about-section {
+    flex: 0 0 50%; /* Adjust the text width */
+    text-align: left;
+    padding-right: 20px;
+}
+
+.about-description {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+.cta-button {
+    color: #ffffff; /* Set text color to light blue */
+    background-color: transparent; /* Set background color to transparent */
+    padding: 10px 20px; /* Adjust padding for button size */
+    text-decoration: none; /* Remove default underline */
+    
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.navigation {
+    display: flex;
+    gap: 20px; 
+    justify-content: flex-end;
+}
+.navigation a {
+   
+    text-decoration: none;
+    padding: 8px 16px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    justify-content: flex-end;
+}
+
+.hero-section {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e68300;
+}
+
+/* styles.css */
+
+/* Styles for services section */
+.services-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    width: 300px;
+    text-align: left;
+}
+
+.service-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-name {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.service-price {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.service-category {
+    font-size: 1.1em;
+    color: #777;
+}
+
+.service-description-title {
+    font-size: 1.2em;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.service-description {
+    color: #444;
+}
+
+.service-link {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.service-link:hover {
+    background-color: #e68300;
+}
