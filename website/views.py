@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Service, Product, About
+from .models import Service, Product, About, Experimental_Projects
 
 def home(request):
     services = Service.objects.all()
@@ -17,3 +17,7 @@ def about(request):
     abouts = About.objects.all()
 
     return render (request, 'dotdeveloper/about_us.html',{'abouts':abouts})
+
+def experimental_projects(request):
+    projects = Experimental_Projects.objects.all()
+    return render (request, 'dotdeveloper/project_list.html',{'projects':projects})

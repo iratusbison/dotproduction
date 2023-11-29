@@ -11,15 +11,20 @@
                 <img src="{% static 'images/dot.png' %}" alt="dot" class="logo">
             </a>
         </div>
-        <nav class="navigation">
 
-            <a href="{% url 'explore_services' %}" class="cta-button">Explore Services</a>
-            <a href="{% url 'explore_products' %}" class="cta-button">Explore Products</a>
+        <nav class="navigation">
+            <a href="{% url 'home' %}" class="cta-button">Home</a>
+            <a href="{% url 'explore_services' %}" class="cta-button">Services</a>
+            <a href="{% url 'explore_products' %}" class="cta-button">Products</a>
+            <a href="{% url 'projects' %}" class="cta-button">Projects</a>
+
+
         </nav>
     </header>
 </head>
-<body>
+<body><center>
 
+</center>
     <main>
         <!-- Main content specific to index.html -->
         {% block main_content %}

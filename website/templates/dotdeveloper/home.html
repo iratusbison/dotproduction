@@ -7,9 +7,12 @@
 
     <main>
         {% block main_content %}
+
         <section class="hero-section">
             <h1>Welcome to Dot Developers!</h1>
             <p>Your one-stop solution for web application development.</p>
+
+            <a href="{% url 'chatbot' %}" class="btn">"Hello Friend, I'm DotBot to guide you"</a>
 
         </section>
 

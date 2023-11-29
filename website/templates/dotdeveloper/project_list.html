@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block main_content %}
+
+<main>
+    <section id="services" class="services-section">
+        <h3 class="section-title">Our Projects</h3>
+        <ul class="services-list">
+            {% for project in projects %}
+            <li class="service-item">
+                <div class="service-info">
+                    <h3 class="service-name">{{ project.name }}</h3>
+                    <p class="service-category">Category: {{ project.catergory }}</p>
+                    <h3 class="service-description-title">Description:</h3>
+                    <p class="service-description">{{ project.description }}</p>
+                    <a href="{{ project.url }}" class="service-link" target="_blank">View Product</a>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+</main>
+
+
+{% endblock %}

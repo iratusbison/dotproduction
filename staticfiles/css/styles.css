@@ -60,7 +60,7 @@ footer {
     height: auto; /* Maintain aspect ratio */
     display: block; /* Ensure proper spacing */
     margin: 0 auto; /* Center the logo horizontally */
-    transition: transform 0.3s ease; 
+    transition: transform 0.5s ease;
 }
 .logo:hover {
     transform: scale(1.1); /* Example: Enlarge logo on hover */
@@ -96,17 +96,17 @@ footer {
     background-color: transparent; /* Set background color to transparent */
     padding: 10px 20px; /* Adjust padding for button size */
     text-decoration: none; /* Remove default underline */
-    
-    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+    transition:color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+
 }
 
 .navigation {
     display: flex;
-    gap: 20px; 
+    gap: 20px;
     justify-content: flex-end;
 }
 .navigation a {
-   
+
     text-decoration: none;
     padding: 8px 16px;
     color: #ffffff;
@@ -115,6 +115,7 @@ footer {
     transition: background-color 0.3s, color 0.3s;
     justify-content: flex-end;
 }
+
 
 .hero-section {
     background-color: #f8f8f8;
@@ -159,6 +160,7 @@ footer {
 .services-section {
     padding: 50px 0;
     text-align: center;
+
 }
 
 .section-title {
@@ -174,6 +176,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    transition: transform 0.5s ease;
 }
 
 .service-item {
@@ -230,3 +233,4 @@ footer {
 .service-link:hover {
     background-color: #e68300;
 }
+

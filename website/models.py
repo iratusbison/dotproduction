@@ -25,3 +25,13 @@ class About(models.Model):
 
     def __str__(self):
         return f"{self.name}"
+
+
+class Experimental_Projects(models.Model):
+    name = models.CharField(max_length=100, null=True)
+    description = models.CharField(max_length=500)
+    catergory = models.CharField(max_length=100, null=True)
+    url = models.URLField()
+
+    def __str__(self):
+        return f"{self.name} - {self.url}"
