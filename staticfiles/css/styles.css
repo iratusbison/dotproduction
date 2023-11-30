@@ -102,7 +102,7 @@ footer {
 
 .navigation {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     justify-content: flex-end;
 }
 .navigation a {

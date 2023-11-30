@@ -5,7 +5,7 @@
     <div class="logo-section">
 
             <a href="{% url 'home' %}">
-                <img src="{% static 'images/dot.png' %}" alt="dot" class="logo">
+                <img src="{% static 'images/dotdeveloper.png' %}" alt="dot" class="logo">
             </a>
         </div>
     <meta charset="UTF-8">
@@ -75,22 +75,14 @@
         form[action="{% url 'delete_chat' %}"] {
             text-align: center;
         }
-        input[type="submit"][value="Delete Chat History"] {
+        input[type="submit"][value="clear"] {
             padding: 8px 16px;
             background-color: #f44336;
         }
-        footer {
-            position: fixed;
-            bottom: 0;
-            width: 70%;
-            background-color: white; /* Adjust as needed */
-            padding: 18px;
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds shadow */
-
-        }
+        
         footer {
     width: 100%;
-    background-color: #f5f5f5; /* Adjust as per your design */
+    background-color: #ffffff; /* Adjust as per your design */
     position: fixed;
     left: 0;
     bottom: 0;
@@ -139,7 +131,7 @@
 <footer>
     <form action="{% url 'delete_chat' %}" method="post" class="delete-chat">
         {% csrf_token %}
-        <input type="submit" value="Delete Chat History">
+        <input type="submit" value="clear">
     </form>
     <form method="post">
         {% csrf_token %}

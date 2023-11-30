@@ -21,3 +21,6 @@ def about(request):
 def experimental_projects(request):
     projects = Experimental_Projects.objects.all()
     return render (request, 'dotdeveloper/project_list.html',{'projects':projects})
+
+def designs(request):
+    return render (request, 'pavan/index.html')
