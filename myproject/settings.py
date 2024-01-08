@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-xn&&dk^-&1^3b2*sq^u*49!^ju#3&zf=6x#w(9^x&0%)v$58+&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['dotdevelopers.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'website.apps.WebsiteConfig',
-    'chatbot.apps.ChatbotConfig',
+    'website',
+    
 ]
 
 MIDDLEWARE = [
@@ -121,7 +121,7 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-
+'''
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
     '/home/dotdevelopers/dotdev/static',
@@ -129,7 +129,7 @@ STATICFILES_DIRS = [
     'home/dotdevelopers/dotdev/about_us'
 
 ]
-
+'''
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
