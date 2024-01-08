@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-xn&&dk^-&1^3b2*sq^u*49!^ju#3&zf=6x#w(9^x&0%)v$58+&
 DEBUG = True
 
 ALLOWED_HOSTS = ['https://dot-5ppj.onrender.com/','dot-5ppj.onrender.com/','dot-5ppj.onrender.com']
-CSRF_TRUSTED_ORIGINS = ['https://dot-5ppj.onrender.com/','dot-5ppj.onrender.com/','dot-5ppj.onrender.com'] # Replace with your Render domain
+CSRF_TRUSTED_ORIGINS = ['https://dot-5ppj.onrender.com/','https://dot-5ppj.onrender.com'] # Replace with your Render domain
 
 
 # Application definition
