@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-xn&&dk^-&1^3b2*sq^u*49!^ju#3&zf=6x#w(9^x&0%)v$58+&
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+#ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['https://dot-5ppj.onrender.com/','dot-5ppj.onrender.com/','dot-5ppj.onrender.com']
 CSRF_TRUSTED_ORIGINS = ['https://dot-5ppj.onrender.com/','https://dot-5ppj.onrender.com'] # Replace with your Render domain
 
@@ -122,15 +122,12 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-'''
+
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-    '/home/dotdevelopers/dotdev/static',
-    '/home/dotdevelopers/dotdev/staticfiles',
-    'home/dotdevelopers/dotdev/about_us'
+    os.path.join(BASE_DIR, 'staticfiles')
 
 ]
-'''
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
